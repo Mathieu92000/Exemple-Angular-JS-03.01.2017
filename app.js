@@ -2,4 +2,5 @@
 
    app.controller('HelloWorldController',function($scope)){
 
+    $scope.hello="Hello World!";
    });
