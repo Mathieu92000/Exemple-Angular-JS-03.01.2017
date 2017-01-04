@@ -5,20 +5,20 @@
     <title>My First Angular App </title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" integrity="sha256-+f0njwC9E3IT9zDPry5DSIcGdSxQYezBaStQ4L0ZRfU=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
-    <script src="component/HelloWorldController.js"></script>
-    <script src="component/InputController.js"></script>
-    <script src="component/ShowController.js"></script>
-    <script src="component/ValueService.js"></script>
+    <script src="HelloWorldController.js"></script>
+    <script src="InputController.js"></script>
+    <script src="ShowController.js"></script>
+    <script src="ValueService.js"></script>
 </head>
 <body ng-app="myFirstApp">
 
-    <div[ng-controller "HelloWorldController">
+    <div ng-controller="InputController">
     <input type="text" ng-model="value1"/>
     <div>{{value1}}</div>
-    <button ng-click="send">Send</button>
+    <button ng-click="send()">Send</button>
     </div>
 <div ng-controller="ShowController">
-    <button ng-click=""get">Get</button>
+    <button ng-click="get()">Get</button>
     <div>{{value2}}</div>
 </div>
 </body>
