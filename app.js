@@ -1,2 +1,1 @@
-angular.module('myFirstApp',[]);
-angular.module('mySecondApp',[]);
+angular.module("app",[])
