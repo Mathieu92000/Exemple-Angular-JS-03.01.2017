@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+<meta charset="utf-8" />
+        <title>My First Angular App </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" integrity="sha256-+f0njwC9E3IT9zDPry5DSIcGdSxQYezBaStQ4L0ZRfU=" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="tableau.css" />
+        <script src="ShowControllerEleve.js"></script>
+
+        <div ng-app="app" ng-controller="Ctrl">
+            <table>
+                <thead>
+                <tr>
+                    <th>Prenom des Eleves en fonction des Matieres et de Leurs Moyennes</th>
+                    <th class="pct">Moyenne des Eleves En fonction des Matieres</th>
+                </tr>
+                </thead>
+                <tbody ng-repeat="browser in browsers">
+                <tr class="total">
+                    <td class="browser">{{browser.name}}</td>
+                    <td class="pct">{{browser.total}} Moyenne</td>
+                </tr>
+                <tr ng-repeat="version in browser.versions" class="detail">
+                    <td class="browser">{{browser.name}} {{version.name}}</td>
+                    <td class="pct">{{version.value}} Moyenne</td>
+                </tr>
+                <tbody>
+            </table>
+        </div>
