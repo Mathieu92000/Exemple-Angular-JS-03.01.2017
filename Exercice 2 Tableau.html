@@ -12,18 +12,18 @@
             <table>
                 <thead>
                 <tr>
-                    <th>Prenom des Eleves en fonction des Matieres et de Leurs Moyennes</th>
+                    <th>Prenom des Eleves en fonction des Matières et de Leurs Moyennes</th>
                     <th class="pct">Moyenne des Eleves En fonction des Matieres</th>
                 </tr>
                 </thead>
                 <tbody ng-repeat="browser in browsers">
                 <tr class="total">
                     <td class="browser">{{browser.name}}</td>
-                    <td class="pct">{{browser.total}} Moyenne</td>
+                    <td class="pct">{{browser.total}}</td>
                 </tr>
                 <tr ng-repeat="version in browser.versions" class="detail">
                     <td class="browser">{{browser.name}} {{version.name}}</td>
-                    <td class="pct">{{version.value}} Moyenne</td>
+                    <td class="pct">{{version.value}}</td>
                 </tr>
                 <tbody>
             </table>
