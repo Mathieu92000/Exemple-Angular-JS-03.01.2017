@@ -37,35 +37,22 @@
 
     <body>
 
-    <center><h2>Connexion au site Internet Blog Dynamique Exercice 3</h2></center>
-
-    <form action="connexion.php" method="post">
-
-        <table>
-
+    <form action="login.php" method='post'>
+        <table align="center" border="0">
+            <tr>
+                <td>Login :</td>
+                <td><input type="text" name="login" maxlength="250"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password"name="pass" maxlength="10"></td>
+            </tr>
             <tr>
 
-                <br></br>
-
-                <center><td><label for="login"><strong>Utilisateur</strong></label></td></center>
-                <center><td><input type="text" name="login" id="login"/></td></center>
-
+                <td colspan="2" align="center"><input type="submit" value="Se Connecter"></td>
             </tr>
-
-            <tr>
-
-                <td><label for="pass"><strong>Mot de passe</strong></label></td>
-                <td><input type="password" name="pass" id="pass"/></td>
-
-            </tr>
-
         </table>
-
-        <input type="submit" name="connexion" value="Se connecter"/>
-
     </form>
-
-    </body>
 
     </html>
 </div>
