@@ -17,7 +17,7 @@
             <a class="navbar-brand" href="#">WebSiteName</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="Exercice 3 Blog Dynamique">Home</a></li>
+            <li class="active"><a href="Exercice 3 Blog Dynamique.php">Home</a></li>
             <li><a href="#">Page 1</a></li>
             <li><a href="#">Page 2</a></li>
         </ul>
@@ -38,7 +38,7 @@
 
     $errors= array();
     
-    require_once 'db.php';
+
 
     if(empty($_POST['username'])){
 
@@ -87,44 +87,32 @@
 
 <center><h1>S'inscrire</h1></center>
 
-<?php if (!empty($errors));?>
-<div class="alert alert-danger">
-    <p>Vous n'avez pas rempli correctement le formulaire</p>
-    <ul>
-    <?php foreach($errors as $error): ?>
-        <li><?=$error; ?></li>
-    <?php endforeach; ?>
-    </ul>
 
-</div>
-<?php endif; ?>
 
 <form action="" method="POST">
 
     <div class="form-group">
 
     <label for="">Pseudo</label>
-    <input type="text" name="Username" class="form-control" required/>
+    <input type="text" name="Username" class="form-control" />
 
 </div>
 
 <div class="form-group">
 
     <label for="">Email</label>
-    <input type="email" name="email" class="form-control" required/>
+    <input type="email" name="email" class="form-control"/>
 
 </div>
 
     <div class="form-group">
 
     <label for="">Mot de passe </label>
-    <input type="password" name="password" class="form-control" required/>
+    <input type="password" name="password" class="form-control"/>
 
 </div>
-
-<button type="submit" class="btn btn-primary">M'inscrire</button>
-
-    </form>
+    <a href="Inscription Validée.html" target="_blank"> <input type="button" value="M'inscrire"> </a>
+</form>
 
 </body>
 </html>

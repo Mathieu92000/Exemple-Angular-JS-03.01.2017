@@ -16,10 +16,10 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="Exercice 3 Blog Dynamique.html">WebSiteName</a>
+            <a class="navbar-brand" href="Exercice 3 Blog Dynamique.php">WebSiteName</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="Exercice 3 Blog Dynamique.html">Home</a></li>
+            <li class="active"><a href="Exercice 3 Blog Dynamique.php">Home</a></li>
             
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -48,7 +48,8 @@
 
 </div>
 
-<button type="submit" class="btn btn-primary">Me Connecter</button>
+<a href="Accueil.html" target="_blank"> <input type="button" value="Vous Connecter"> </a>
+
 
     </form>
 
