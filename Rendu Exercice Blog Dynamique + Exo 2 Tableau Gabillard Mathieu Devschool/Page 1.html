@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercice 3 Blog Dynamique Angular JS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" integrity="sha256-+f0njwC9E3IT9zDPry5DSIcGdSxQYezBaStQ4L0ZRfU=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="Article.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="Accueil.html">Accueil</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="Accueil.html">Accueil</a></li>
+             <li><a href="Page 1.html">Page 1</a></li>
+
+            
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href=""><span class="glyphicon glyphicon-user"></span> Utilisateur 1</a></li>
+            <li><a href="Se Deconnecter.php"><span class="glyphicon glyphicon-log-in"></span> Se Deconnecter</a></li>
+        </ul>
+    </div>
+</nav>
+
+<html>
+
+<head>
+    <body ng-app="Page 1">
+
+
+    <h1> Article 1 The Island of Maurituis</h1>
+
+    <img src="plage_maurice1.jpg">
+
+        <p> L'ile Maurice Mer Turquoise et transparente offre toute sa splendeur a cette ile qui est visité par de nombreuses personnes , L'ile Maurice se trouve a 11h d'avion de Paris en vol direct  </p>
+
+    <div ng-controller="InputController">
+
+        <button ng-click="Return()">Return</button>
+    </div>
+
+
+</body>
+</html>
